@@ -1,0 +1,23 @@
+# VSPHERE VCENTER #
+user = "user@vsphere.local"
+password = "VMware01!"
+vsphere_server = "vcenter.home.lab"
+
+# VSPHERE DATACENTER #
+datacenter = "dc"
+datastore = "local-datastore"
+resource_pool = "web_server"
+
+# VSPHERE VIRTUAL MACHINE #
+name = "web01"
+template = "ubuntu_template"
+network = "VM Network"
+cpus = 2
+memory = 1024
+
+# VIRTUAL MACHINE NETWORK #
+hostname = "web01"
+domain = "home.lab"
+ip = "1.1.0.5"
+netmask = "24"
+gateway = "1.1.0.1"

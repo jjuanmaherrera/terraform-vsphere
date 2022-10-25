@@ -1,0 +1,9 @@
+#cloud-config
+#hostname: terraform
+users:
+  - name: ubuntu
+    lock_passwd: true
+    ssh_authorized_keys:
+     - ssh-rsa AAAAB3NzaC1yc2EAAAADAXXXX
+    sudo: ALL=(ALL) ALL
+    groups: [adm, audio, cdrom, dialout, floppy, video, plugdev, dip, netdev]
